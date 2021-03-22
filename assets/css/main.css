@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.contaner {
+    max-width: 1040px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #161c2d;
+    text-align: left;
+    background-color: #fff;
+    justify-items: center;
+}
+
+.menu-item {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.item-dropdown:hover .menu-item {
+    display: flex;
+}
+  
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: -5px;
+    left: 100%;
+}
+
+.item-dropdown .item-sub:hover .sub-menu {
+    display: block;
+}
+
+.narbar > .contaner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 20px!important;
+    padding-right: 20px!important;
+    align-items: center;
+}
+
+.btn-close, .menu-bar {
+    display: none;
+    cursor: pointer;
+}
+
+.narbar-nar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.narbar {
+    padding: 1.25rem 0;
+    align-items: center;
+}
+
+.item-dropdown {
+    color: #506690;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+
+.narbar-btn {
+    margin-left: auto;
+    background-color: #335eea;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.8125rem 1.25rem;
+    text-align: center;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.narbar-brand {
+    display: inline-block;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    margin-right: auto;
+    font-size: 1.5rem;
+    line-height: inherit;
+    white-space: nowrap
+}
+
+.drop {
+    display: flex;
+    justify-content: space-around;
+}
