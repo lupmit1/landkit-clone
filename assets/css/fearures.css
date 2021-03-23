@@ -1,0 +1,32 @@
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.features .features-item {
+    width: 30%;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.features .icon svg {
+    width: 45px !important;
+    height: 45px !important;
+}
+
+.features .features__content .content-small {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+    .features {
+        display: flex;
+        flex-direction: column;
+    }
+    .features .features-item {
+        width: 100%;
+        padding-top: 30px;
+    }
+}

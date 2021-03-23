@@ -1,0 +1,35 @@
+.brands {
+    border-top: 1px solid #f1f4f8!important;
+    border-bottom: 1px solid #f1f4f8!important;
+    padding: 40px 0px;
+    margin-top: 100px;
+}
+
+.brands .brand-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 25px;
+    width: 100%;
+}
+
+.brands .brand-item {
+    width: 16.6%;
+}
+
+.brands .brand-item svg {
+    width: 80%;
+    color: #869ab8!important;
+}
+
+@media only screen and (max-width: 992px) {
+    .brands .brand-item {
+        width: 33.3%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .brands .brand-item {
+        width: 50%;
+    }
+}

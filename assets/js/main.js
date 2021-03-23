@@ -1,14 +1,18 @@
+// show menu mobile
+
 function showMenu() {
     $("#menu-toggle").show();
     $("#app").css("overflowY", "hidden");
     $("#menu-toggle").css({ "overflow": "scroll", "height": "100vh" });
 }
 
+// hide menu mobile
 function hideMenu() {
     $("#menu-toggle").hide();
     $("#app").css("overflowY", "auto");
 }
 
+// hide sub
 $("#menu-toggle li.chose").click(function() {
     $("#menu-toggle .sub-menu").not($(this).find(".sub-menu")).hide();
     $("#menu-toggle .fa-chevron-down").not($(this).find(".fa-chevron-down")).css("transform", "rotate(0deg)");

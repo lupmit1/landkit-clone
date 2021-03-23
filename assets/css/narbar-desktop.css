@@ -262,6 +262,10 @@
     color: #335eea;
 }
 
+.header .dropdown #dropdown__item {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 992px) {
     .header .menu {
         display: none;
