@@ -12,6 +12,8 @@
     position: relative;
     display: flex;
     align-items: center;
+    padding-top: 50px;
+    z-index: 100;
 }
 
 .slideshow .slide .slide-list .slide-item {
@@ -47,6 +49,7 @@
 .slide .content .icon svg {
     width: 150px;
     text-align: center;
+    color: #FF5A5F;
 }
 
 .slide .content .comment {

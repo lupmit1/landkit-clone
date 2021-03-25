@@ -1,0 +1,68 @@
+.pricing-wrap {
+    background-color: #f1f4f8 !important;
+    padding-top: 100px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pricing .check-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.pricing .check-form .switch {
+    min-height: 1.375rem;
+    margin-left: .75rem!important;
+    margin-right: .75rem!important;
+    padding-left: 3rem;
+}
+
+.pricing .check-form input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.35rem;
+    opacity: 0;
+}
+
+.pricing .check-form .custom-switch {
+    position: relative;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+
+.pricing .check-form .custom-switch::before {
+    height: 1.375rem;
+    border-radius: .6875rem;
+    left: -3rem;
+    width: 2.5rem;
+    pointer-events: all;
+    display: block;
+    content: "";
+    background-color: #d9e2ef;
+    border: #abbcd5 solid 0;
+    box-shadow: none;
+    position: absolute;
+}
+
+.pricing .check-form .custom-switch::after {
+    top: .35rem;
+    left: -2.8125rem;
+    background-color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: .5rem;
+    position: absolute;
+    display: block;
+    content: "";
+    background: no-repeat 50%/50% 50%;
+    z-index: 100;
+}

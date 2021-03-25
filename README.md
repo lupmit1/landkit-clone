@@ -4,4 +4,4 @@ Done Narbar UI
 ## Day 2
 Done Welcome, Features, Brands, About UI
 ## Day 3
-Done Slideshow UI
+Done Slideshow, Stats UI, Pricing (50%) 
