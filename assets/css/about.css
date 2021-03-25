@@ -19,6 +19,8 @@
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    border-bottom-left-radius: 300px 15px;
+    border-bottom-right-radius: 300px 15px;
 }
 
 .about .content {

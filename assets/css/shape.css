@@ -1,0 +1,19 @@
+.shape {
+    position: absolute;
+    margin-top: -3rem;
+}
+
+.shape .shape-line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #f1f4f8;
+}
+
+.shape .shape-line svg {
+    width: 100%;
+    height: auto;
+    transform: scale(2);
+    transform-origin: top center;
+}

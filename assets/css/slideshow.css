@@ -1,0 +1,133 @@
+.slideshow {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.slideshow .content-text {
+    text-align: center;
+}
+
+.slideshow .slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.slideshow .slide .slide-list .slide-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 940px;
+    height: 350px;
+}
+
+.slideshow .slide .image {
+    width: 50%;
+    height: inherit;
+}
+
+.slideshow .slide .image img {
+    width: 100%;
+    height: inherit;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: cover;
+    border-top-right-radius: 10px 130px;
+    border-bottom-right-radius: 180px 400px;
+}
+
+.slide .content {
+    width: 50%;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.slide .content .icon svg {
+    width: 150px;
+    text-align: center;
+}
+
+.slide .content .comment {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 35px 0px;
+}
+
+.slide .content .name {
+    color: #8b8b8b;
+    font-size: 14px;
+}
+
+.slideshow .slide .btn-slide {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.slide .btn-slide button {
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #335eea;
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+.slide .btn-slide button:hover {
+    box-shadow: 0 1.5px 4px #335eea;
+}
+
+.slide .btn-slide button:active {
+    opacity: 0.5;
+}
+
+.slideshow .slide .btn-slide .pre {
+    margin-left: -25px;
+}
+
+.slideshow .slide .btn-slide .next {
+    margin-right: -25px;
+}
+
+@media only screen and (max-width: 992px) {
+    .slideshow .slide .slide-list .slide-item {
+        width: 660px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .slideshow .slide .slide-list .slide-item {
+        flex-direction: column;
+        height: auto;
+        width: 480px;
+    }
+    .slideshow .slide .image {
+        width: auto;
+    }
+    .slideshow .slide .image img {
+        border-radius: 5px
+    }
+    .slide .content {
+        width: 100%;
+        padding: 20px 20px;
+    }
+    .slideshow .slide .btn-slide {
+        bottom: 95px;
+    }
+    .slide .content .icon svg {
+        width: 120px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .slideshow .slide .slide-list .slide-item {
+        width: calc(100vw - 75px) !important;
+    }
+}
