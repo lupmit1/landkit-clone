@@ -13,3 +13,45 @@
     transform: scale(2);
     transform-origin: top center;
 }
+
+.line-two {
+    position: relative;
+    margin-top: -16rem;
+}
+
+.line-two .line-two-shape {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    color: #1b2a4e!important;
+    transform: scale(2);
+    width: 100%;
+    height: auto;
+    transform-origin: top center;
+}
+
+.line-three {
+    position: relative;
+}
+
+.line-three .line-three-shape {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    color: #f1f4f8;
+    transform: scale(2);
+    width: 100%;
+    height: auto;
+    transform-origin: top center;
+}
+
+@media only screen and (max-width: 768px) {
+    .line-two {
+        position: relative;
+        margin-top: 0;
+    }
+}

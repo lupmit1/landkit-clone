@@ -1,0 +1,81 @@
+.footer-wrap {
+    background-color: #f1f4f8;
+    padding-top: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-evenly;
+}
+
+.footer .network {
+    width: 30%;
+    padding-left: 40px;
+}
+
+.footer .network .text {
+    margin: 15px 0px;
+    color: #506690;
+}
+
+.footer .network .image {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .network .image img {
+    padding-right: 10px;
+}
+
+.footer .infor {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .infor .footer-list {
+    width: 25%;
+    padding-right: 20px;
+}
+
+.footer .footer-list .title {
+    color: #506690;
+    font-size: 13px;
+}
+
+.footer .footer-list .item {
+    margin: 20px 0px;
+}
+
+.footer .footer-list .item a {
+    color: #869ab8;
+}
+
+.footer .footer-list .item a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer .infor .footer-list {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .footer .network {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer .infor {
+        width: 100%;
+    }
+    .footer .network {
+        padding: 0px;
+    }
+}

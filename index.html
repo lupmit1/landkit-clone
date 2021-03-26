@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/slideshow.css">
     <link rel="stylesheet" href="assets/css/stats.css">
     <link rel="stylesheet" href="assets/css/pricing.css">
+    <link rel="stylesheet" href="assets/css/getstarted.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="assets/css/shape.css">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
@@ -763,64 +765,67 @@
                     All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
                 </div>
             </div>
-            <form class="check-form">
+            <div class="toggle">
                 <span>Annual</span>
-                <div class="switch">
-                    <div class="checkbox">
-                        <input type="checkbox">
-                    </div>
-                    <div class="custom-switch"></div>
-                </div>
+                <label class="switch">
+                  <input type="checkbox" id="toggle">
+                  <span class="slider round"></span>
+                </label>
                 <span>Monthly</span>
-            </form>
+            </div>
 
             <div class="carts">
                 <div class="list-cart">
-                    <div class="cart-item">
+                    <div class="cart-item cart-item-left">
                         <div class="header-content">
                             <span>STANDARD</span>
                         </div>
-                        <div class="price-content">
-                            <span>$29/mo</span>
-                            <span>per seat</span>
+                        <div class="number" style="font-size: 60px;">
+                            <div>
+                                <sup style="font-size: 30px; margin-right: -10px;">$</sup> <span id="price">29</span><span style="font-size: 30px; padding-left: 0px;"> /mo</span>
+                            </div>
                         </div>
+                        <div>
+                            <span style="color: #8b9ebb; font-size: 20px;">per seat</span>
+                        </div>
+
                         <div class="list-check">
                             <div class="item">
-                                <i class="fad fa-check-circle"></i>
+                                <i class="fas fa-check"></i>
                                 <p>Rich, responsive landing pages</p>
                             </div>
                             <div class="item">
-                                <i class="fad fa-check-circle"></i>
+                                <i class="fas fa-check"></i>
                                 <p>100+ styled components</p>
                             </div>
                             <div class="item">
-                                <i class="fad fa-check-circle"></i>
+                                <i class="fas fa-check"></i>
                                 <p>Flexible, simple license</p>
                             </div>
                             <div class="item">
-                                <i class="fad fa-check-circle"></i>
+                                <i class="fas fa-check"></i>
                                 <p>Speedy build tooling</p>
                             </div>
                             <div class="item">
-                                <i class="fad fa-check-circle"></i>
+                                <i class="fas fa-check"></i>
                                 <p>6 months free support included</p>
                             </div>
                         </div>
 
                         <div class="btn-bottom">
-                            <button>Get it now</button>
+                            <a href="#">Get it now</a>
                         </div>
                     </div>
-                    <div class="cart-item">
+                    <div class="cart-item cart-item-right">
                         <div class="header-content">
                             <span>STANDARD</span>
                         </div>
-                        <div class="content-large">
+                        <div class="text-content">
                             We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
                         </div>
 
                         <div class="btn-bottom">
-                            <button>Get it now</button>
+                            <a href="#">Get it now</a>
                         </div>
                     </div>
                 </div>
@@ -828,8 +833,182 @@
         </div>
 
     </div>
+    <div class="line-two">
+        <div class="line-two-shape">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+        </div>
+    </div>
 
+    <div class="getstarted">
 
+        <div class="question container">
+            <div class="question-item">
+                <div class="icon">?</div>
+                <div class="q-a">
+                    <div class="q title-small">
+                        Can I use Landkit for my clients?
+                    </div>
+                    <div class="a content-small">
+                        Absolutely. The Bootstrap Themes license allows you to build a websites for personal use or for a client.
+                    </div>
+                </div>
+            </div>
+            <div class="question-item">
+                <div class="icon">?</div>
+                <div class="q-a">
+                    <div class="q title-small">
+                        Do I get free updates?
+                    </div>
+                    <div class="a content-small">
+                        Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
+                    </div>
+                </div>
+            </div>
+            <div class="question-item">
+                <div class="icon">?</div>
+                <div class="q-a">
+                    <div class="q title-small">
+                        Is there a money back guarantee?
+                    </div>
+                    <div class="a content-small">
+                        Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
+                    </div>
+                </div>
+            </div>
+            <div class="question-item">
+                <div class="icon">?</div>
+                <div class="q-a">
+                    <div class="q title-small">
+                        Does it work with Rails? React? Laravel?
+                    </div>
+                    <div class="a content-small">
+                        Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="get-buy container">
+            <div class="label">
+                GET STARTED
+            </div>
+            <div class="title title-large">
+                Get Landkit and save your time.
+            </div>
+            <div class="text content-large">
+                Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+            </div>
+            <div class="button">
+                <a href="">
+              Buy it now! <i class="far fa-arrow-right"></i>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="line-three">
+        <div class="line-three-shape">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer container">
+            <div class="network">
+                <div class="logo">
+                    <img src="assets/image/brand.svg" alt="">
+                </div>
+                <div class="text">
+                    A better way to build.
+                </div>
+                <div class="image">
+                    <img src="assets/image/instagram.svg" alt="">
+                    <img src="assets/image/facebook.svg" alt="">
+                    <img src="assets/image/twitter.svg" alt="">
+                    <img src="assets/image/pinterest.svg" alt="">
+                </div>
+            </div>
+            <div class="infor">
+                <div class="footer-list">
+                    <span class="title">
+              PRODUCT
+            </span>
+                    <div class="item">
+                        <a href="">Page Builder</a>
+                    </div>
+                    <div class="item">
+                        <a href="">UI Kit</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Styleguide</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Documentation</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Changelog</a>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <span class="title">
+              SERVICES
+            </span>
+                    <div class="item">
+                        <a href="">Documentation</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Changelog</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Pagebuilder</a>
+                    </div>
+                    <div class="item">
+                        <a href="">UI Kit</a>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <span class="title">
+              CONNECT
+            </span>
+                    <div class="item">
+                        <a href="">Page Builder</a>
+                    </div>
+                    <div class="item">
+                        <a href="">UI Kit</a>
+
+                    </div>
+                    <div class="item">
+                        <a href="">Styleguide</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Documentation</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Changelog</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Documentation</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Changelog</a>
+                    </div>
+                </div>
+                <div class="footer-list">
+                    <span class="title">
+              LEGAL
+            </span>
+                    <div class="item">
+                        <a href="">Documentation</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Changelog</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Pagebuilder</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 <script src="assets/js/main.js "></script>
 

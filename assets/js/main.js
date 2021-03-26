@@ -1,25 +1,17 @@
-// show menu mobile
+const price = document.getElementById("price");
+const swap = document.getElementById("toggle");
 
-function showMenu() {
-    $("#menu-toggle").show();
-    $("#app").css("overflowY", "hidden");
-    $("#menu-toggle").css({ "overflow": "scroll", "height": "100vh" });
-}
-
-// hide menu mobile
-function hideMenu() {
-    $("#menu-toggle").hide();
-    $("#app").css("overflowY", "auto");
-}
-
-// hide sub
-$("#menu-toggle li.chose").click(function() {
-    $("#menu-toggle .sub-menu").not($(this).find(".sub-menu")).hide();
-    $("#menu-toggle .fa-chevron-down").not($(this).find(".fa-chevron-down")).css("transform", "rotate(0deg)");
-    $(this).find(".sub-menu").toggle();
-    if ($(this).find(".sub-menu").css("display") === "block") {
-        $(this).find(".fa-chevron-down").css("transform", "rotate(180deg)");
+swap.addEventListener('click', async function() {
+    console.log(swap.checked);
+    if (swap.checked) {
+        for (let i = 29; i <= 49; i++) {
+            price.innerHTML = i;
+            await delay(50);
+        }
     } else {
-        $(this).find(".fa-chevron-down").css("transform", "rotate(0deg)");
+        for (let j = 49; j >= 29; j--) {
+            price.innerHTML = j;
+            await delay(50);
+        }
     }
 })

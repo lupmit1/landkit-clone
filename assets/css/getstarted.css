@@ -1,0 +1,94 @@
+.getstarted {
+    background-color: #1b2b4f;
+    padding-top: 360px;
+}
+
+.question {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.5;
+}
+
+.question .question-item {
+    width: 50%;
+    display: flex;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+
+.question .question-item .icon {
+    background-color: #44ba96;
+    padding: 4px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    margin-right: 20px;
+}
+
+.question .question-item .q-a {
+    flex: 1;
+}
+
+.question .question-item .q {
+    color: white;
+    font-size: 18px;
+}
+
+.question .question-item .a {
+    color: #869ab8;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .question .question-item {
+        width: 100%;
+    }
+    .line-two {
+        position: relative;
+        margin-top: 0;
+    }
+}
+
+.get-buy {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.get-buy .label {
+    width: fit-content;
+    margin: auto;
+    background-color: #203055;
+    color: #506690;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.get-buy .title {
+    color: white;
+}
+
+.get-buy .text {
+    color: #869ab8;
+    margin: 30px auto 40px;
+    max-width: 600px;
+}
+
+.get-buy .button a {
+    color: white;
+    background-color: #42ba96;
+    padding: 18px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.get-buy .button a:hover {
+    background-color: #42ba96;
+    background-color: #389e7f;
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, .1), 0 .5rem 1rem -.75rem rgba(22, 28, 45, .1);
+}
