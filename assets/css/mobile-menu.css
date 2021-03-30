@@ -6,6 +6,7 @@
     z-index: 5;
     background-color: white;
     padding: 20px;
+    overflow: scroll;
 }
 
 .menu-toggle p {
