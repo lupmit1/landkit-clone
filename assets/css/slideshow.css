@@ -8,160 +8,158 @@
     text-align: center;
 }
 
-.slideshow .slide {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-top: 50px;
-    z-index: 100;
-}
-
-.slideshow .slide .slide-list .slide-item {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-radius: 8px;
-    width: 940px;
-    height: 350px;
-}
-
-.slideshow .slide .slide-list .myslide:not(:last-child) {
-    position: absolute;
-}
-
-.slideshow .slide .image {
-    width: 50%;
-    height: inherit;
-}
-
-.slideshow .slide .image img {
-    width: 100%;
-    height: inherit;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    object-fit: cover;
-    border-top-right-radius: 10px 130px;
-    border-bottom-right-radius: 180px 400px;
-}
-
-.slide .content-wrap {
-    width: 50%;
-    text-align: center;
-    padding: 0px 50px;
+.main-slide .slide-body {
+  
+    /* position: relative; */
     overflow: hidden;
-}
+    height: 100%;
+  }
+  .main-slide .image-slide {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .main-slide .slide-wrapper {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+  }
+  .main-slide .slide-item {
+      width: 50%;
+    height: 100%;
+  }
 
-.slide .content .icon svg {
-    width: 150px;
+  .main-slide .comment-content {
+    padding: 64px 40px;
+    cursor: grab;
+  }
+  .main-slide .icon {
+    max-width: 9.5rem;
+    margin: 0 auto;
+  }
+  .main-slide .icon svg {
+    max-width: 100%;
+  }
+  .main-slide .slide-item .comment {
     text-align: center;
-    color: #FF5A5F;
-}
-
-.slide .content .comment {
     font-size: 18px;
     line-height: 1.5;
     margin: 35px 0px;
-}
-
-.slide .content .name {
+  }
+  .main-slide .slide-item .name {
+    text-align: center;
     color: #8b8b8b;
     font-size: 14px;
-}
+    text-transform: uppercase;
+    
+  }
+ .main-slide {
+    position: relative;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+    background: rgb(255 255 255);
+    box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
+    z-index: 2;
+  }
 
-.slideshow .slide .btn-slide {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    position: absolute;
-}
-
-.slide .btn-slide button {
-    border-radius: 30px;
-    padding: 5px;
-    background-color: #335eea;
-    width: 50px;
-    height: 50px;
-    border: none;
-    color: white;
-    outline: none;
+  .main-slide .image-slide {
     cursor: pointer;
-}
-
-.slide .btn-slide button:hover {
-    box-shadow: 0 1.5px 4px #335eea;
-}
-
-.slide .btn-slide button:active {
-    opacity: 0.5;
-}
-
-.slideshow .slide .btn-slide .pre {
-    margin-left: -25px;
-}
-
-.slideshow .slide .btn-slide .next {
-    margin-right: -25px;
-}
-
-.dots {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  
+  }
+  .main-slide .image-slide img {
+    object-fit: cover;
+    max-width: 100%;
+    opacity: 1;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    position: absolute;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 10px 130px;
+    border-bottom-right-radius: 180px 400px;
+  
+  }
+  .main-slide .image-slide img.hide {
+    opacity: 0;
+    z-index: 0;
+  }
+  .main-slide .slide-btn {
+    width: calc(1.6em + 1.625rem + 2px);
+    height: calc(1.6em + 1.625rem + 2px);
+    color: white;
+    background-color: rgb(51, 94, 234);
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    line-height: calc(1.6em + 1.625rem + 2px);
+    border-radius: 50%;
+    z-index: 100;
+  }
+  .main-slide .slide-btn.btn-next {
+    right: 0;
+    transform: translateX(50%);
+  }
+  .main-slide .slide-btn.btn-pre {
+    left: 0px;
+    transform: translateX(-50%);
+  }
+  .main-slide .slide-dots {
     display: flex;
     position: absolute;
-    bottom: 0px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    z-index: 5;
+  }
+  .main-slide .slide-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background-color: rgb(51, 94, 234);
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  .main-slide .slide-dots .dot.current {
+    background-color: rgb(51, 94, 234);
+    opacity: 1;
+    transform: scale(1.25, 1.25);
+  }
 
-.dots .dot-item {
-    padding: 10px;
-    color: #8b8b8b;
-}
+  .main-slide .slide-dots .dot:hover {
+    transform: scale(1.25, 1.25);
+  }
 
-.dots .active {
-    color: #335eea;
-}
-
-.dots .fas {
-    transform: scale(1, 0.75);
-}
-
-.dots .fas:hover {
-    transform: none;
-}
-
-@media only screen and (max-width: 992px) {
-    .slideshow .slide .slide-list .slide-item {
-        width: 660px;
-        height: 400px;
+  @media only screen and (max-width: 992px) {
+    .image-slide img{
+      height: 100%;
     }
-}
-
-@media only screen and (max-width: 768px) {
-    .slideshow .slide .slide-list .slide-item {
-        flex-direction: column;
-        height: auto;
-        width: 480px;
+  }
+  @media only screen and (max-width: 768px) {
+    .comment-content {
+      padding: 30px 20px 40px 20px;
     }
-    .slideshow .slide .image {
-        width: auto;
+    .main-slide {
+      display: block;
     }
-    .slideshow .slide .image img {
-        border-radius: 5px
+    .slide-body {
+      position: relative;
     }
-    .slide .content-wrap {
-        width: 100%;
-        padding: 20px 20px;
+    .slide-btn {
+      top: 75% !important;
     }
-    .slideshow .slide .btn-slide {
-        bottom: 95px;
+    .main-slide .image-slide img{
+      border-radius: 5px;
     }
-    .slide .content .icon svg {
-        width: 120px;
+    .image-slide {
+      height: 429px;
     }
-}
-
-@media only screen and (max-width: 576px) {
-    .slideshow .slide .slide-list .slide-item {
-        width: calc(100vw - 75px) !important;
-    }
-}
+  }
