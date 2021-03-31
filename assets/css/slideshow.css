@@ -9,51 +9,57 @@
 }
 
 .main-slide .slide-body {
-  
     /* position: relative; */
     overflow: hidden;
     height: 100%;
-  }
-  .main-slide .image-slide {
+}
+
+.main-slide .image-slide {
     border-radius: 0.5rem;
     overflow: hidden;
     z-index: 2;
-  }
-  .main-slide .slide-wrapper {
+}
+
+.main-slide .slide-wrapper {
     display: flex;
     transition: all 0.5s ease-in-out;
     transition-delay: 0.2s;
-  }
-  .main-slide .slide-item {
-      width: 50%;
-    height: 100%;
-  }
+}
 
-  .main-slide .comment-content {
+.main-slide .slide-item {
+    width: 50%;
+    height: 100%;
+}
+
+.main-slide .comment-content {
     padding: 64px 40px;
     cursor: grab;
-  }
-  .main-slide .icon {
+}
+
+.main-slide .icon {
     max-width: 9.5rem;
     margin: 0 auto;
-  }
-  .main-slide .icon svg {
+}
+
+.main-slide .icon svg {
     max-width: 100%;
-  }
-  .main-slide .slide-item .comment {
+}
+
+.main-slide .slide-item .comment {
     text-align: center;
     font-size: 18px;
     line-height: 1.5;
     margin: 35px 0px;
-  }
-  .main-slide .slide-item .name {
+}
+
+.main-slide .slide-item .name {
     text-align: center;
     color: #8b8b8b;
     font-size: 14px;
     text-transform: uppercase;
-    
-  }
- .main-slide {
+}
+
+.main-slide {
     position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -62,17 +68,17 @@
     background: rgb(255 255 255);
     box-shadow: 0 1.5rem 4rem rgba(22, 28, 45, 0.05) !important;
     z-index: 2;
-  }
+}
 
-  .main-slide .image-slide {
+.main-slide .image-slide {
     cursor: pointer;
     position: relative;
     background-color: #fff;
     border-radius: 0.5rem;
     overflow: hidden;
-  
-  }
-  .main-slide .image-slide img {
+}
+
+.main-slide .image-slide img {
     object-fit: cover;
     max-width: 100%;
     opacity: 1;
@@ -83,13 +89,14 @@
     border-bottom-left-radius: 8px;
     border-top-right-radius: 10px 130px;
     border-bottom-right-radius: 180px 400px;
-  
-  }
-  .main-slide .image-slide img.hide {
+}
+
+.main-slide .image-slide img.hide {
     opacity: 0;
     z-index: 0;
-  }
-  .main-slide .slide-btn {
+}
+
+.main-slide .slide-btn {
     width: calc(1.6em + 1.625rem + 2px);
     height: calc(1.6em + 1.625rem + 2px);
     color: white;
@@ -101,24 +108,28 @@
     line-height: calc(1.6em + 1.625rem + 2px);
     border-radius: 50%;
     z-index: 100;
-  }
-  .main-slide .slide-btn.btn-next {
+}
+
+.main-slide .slide-btn.btn-next {
     right: 0;
     transform: translateX(50%);
-  }
-  .main-slide .slide-btn.btn-pre {
+}
+
+.main-slide .slide-btn.btn-pre {
     left: 0px;
     transform: translateX(-50%);
-  }
-  .main-slide .slide-dots {
+}
+
+.main-slide .slide-dots {
     display: flex;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 10px;
     z-index: 5;
-  }
-  .main-slide .slide-dots .dot {
+}
+
+.main-slide .slide-dots .dot {
     width: 10px;
     height: 10px;
     border-radius: 999px;
@@ -127,39 +138,41 @@
     cursor: pointer;
     opacity: 0.5;
     transition: all 0.3s ease;
-  }
-  .main-slide .slide-dots .dot.current {
+}
+
+.main-slide .slide-dots .dot.current {
     background-color: rgb(51, 94, 234);
     opacity: 1;
     transform: scale(1.25, 1.25);
-  }
+}
 
-  .main-slide .slide-dots .dot:hover {
+.main-slide .slide-dots .dot:hover {
     transform: scale(1.25, 1.25);
-  }
+}
 
-  @media only screen and (max-width: 992px) {
-    .image-slide img{
-      height: 100%;
+@media only screen and (max-width: 992px) {
+    .image-slide img {
+        height: 100%;
     }
-  }
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
     .comment-content {
-      padding: 30px 20px 40px 20px;
+        padding: 30px 20px 40px 20px;
     }
     .main-slide {
-      display: block;
+        display: block;
     }
     .slide-body {
-      position: relative;
+        position: relative;
     }
     .slide-btn {
-      top: 75% !important;
+        top: 75% !important;
     }
-    .main-slide .image-slide img{
-      border-radius: 5px;
+    .main-slide .image-slide img {
+        border-radius: 5px;
     }
     .image-slide {
-      height: 429px;
+        height: 429px;
     }
-  }
+}
